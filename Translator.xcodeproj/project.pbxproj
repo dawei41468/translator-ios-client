@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D93C96DF2F1DD6DF00DE447B /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = D93C96DB2F1DD6DF00DE447B /* SocketIO */; };
+		D93C96E02F1DD6DF00DE447B /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D93C96DC2F1DD6DF00DE447B /* KeychainSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D93C96B82F1DD57700DE447B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D93C96A82F1DD57600DE447B /* Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D93C96B72F1DD57700DE447B /* TranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D93C96C12F1DD57700DE447B /* TranslatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93C96D82F1DD6DF00DE447B /* Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93C96D92F1DD6DF00DE447B /* TranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93C96DA2F1DD6DF00DE447B /* TranslatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +50,11 @@
 			path = TranslatorUITests;
 			sourceTree = "<group>";
 		};
+		D93C96D42F1DD59B00DE447B /* Docs */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Docs;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93C96DF2F1DD6DF00DE447B /* SocketIO in Frameworks */,
+				D93C96E02F1DD6DF00DE447B /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,21 +87,14 @@
 		D93C969F2F1DD57600DE447B = {
 			isa = PBXGroup;
 			children = (
+				D93C96D42F1DD59B00DE447B /* Docs */,
 				D93C96AA2F1DD57600DE447B /* Translator */,
 				D93C96BA2F1DD57700DE447B /* TranslatorTests */,
 				D93C96C42F1DD57700DE447B /* TranslatorUITests */,
-				D93C96A92F1DD57600DE447B /* Products */,
+				D93C96D82F1DD6DF00DE447B /* Translator.app */,
+				D93C96D92F1DD6DF00DE447B /* TranslatorTests.xctest */,
+				D93C96DA2F1DD6DF00DE447B /* TranslatorUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		D93C96A92F1DD57600DE447B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D93C96A82F1DD57600DE447B /* Translator.app */,
-				D93C96B72F1DD57700DE447B /* TranslatorTests.xctest */,
-				D93C96C12F1DD57700DE447B /* TranslatorUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,12 +114,15 @@
 			);
 			fileSystemSynchronizedGroups = (
 				D93C96AA2F1DD57600DE447B /* Translator */,
+				D93C96D42F1DD59B00DE447B /* Docs */,
 			);
 			name = Translator;
 			packageProductDependencies = (
+				D93C96DB2F1DD6DF00DE447B /* SocketIO */,
+				D93C96DC2F1DD6DF00DE447B /* KeychainSwift */,
 			);
 			productName = Translator;
-			productReference = D93C96A82F1DD57600DE447B /* Translator.app */;
+			productReference = D93C96D82F1DD6DF00DE447B /* Translator.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D93C96B62F1DD57700DE447B /* TranslatorTests */ = {
@@ -137,7 +145,7 @@
 			packageProductDependencies = (
 			);
 			productName = TranslatorTests;
-			productReference = D93C96B72F1DD57700DE447B /* TranslatorTests.xctest */;
+			productReference = D93C96D92F1DD6DF00DE447B /* TranslatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D93C96C02F1DD57700DE447B /* TranslatorUITests */ = {
@@ -160,7 +168,7 @@
 			packageProductDependencies = (
 			);
 			productName = TranslatorUITests;
-			productReference = D93C96C12F1DD57700DE447B /* TranslatorUITests.xctest */;
+			productReference = D93C96DA2F1DD6DF00DE447B /* TranslatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -195,8 +203,12 @@
 			);
 			mainGroup = D93C969F2F1DD57600DE447B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D93C96DD2F1DD6DF00DE447B /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+				D93C96DE2F1DD6DF00DE447B /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = D93C96A92F1DD57600DE447B /* Products */;
+			productRefGroup = D93C969F2F1DD57600DE447B;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -400,6 +412,7 @@
 				DEVELOPMENT_TEAM = HQMBCP82XU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to capture speech for real-time translation between languages.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,6 +445,7 @@
 				DEVELOPMENT_TEAM = HQMBCP82XU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to capture speech for real-time translation between languages.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -578,6 +592,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D93C96DD2F1DD6DF00DE447B /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 16.0.0;
+			};
+		};
+		D93C96DE2F1DD6DF00DE447B /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D93C96DB2F1DD6DF00DE447B /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D93C96DD2F1DD6DF00DE447B /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+		D93C96DC2F1DD6DF00DE447B /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D93C96DE2F1DD6DF00DE447B /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D93C96A02F1DD57600DE447B /* Project object */;
 }
